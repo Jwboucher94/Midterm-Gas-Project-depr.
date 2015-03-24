@@ -1,15 +1,15 @@
 <resources>
-    <string name="app_name">Gas Costs</string>
+    <string name="app_name">Travel Cost Calculations</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="tripView">Trip Cost:</string>
     <string name="mpg">MPG:</string>
-    <string name="min">0</string>
+    <string name="min">10</string>
     <string name="max">50</string>
     <string name="gasView">Gas Price:</string>
-    <string name="min2">$0.00</string>
-    <string name="max2">$5.00</string>
+    <string name="min2">$1.00</string>
+    <string name="max2">$4.00</string>
     <string name="distView">Distance:</string>
     <string name="help">Enter in Miles</string>
     <string name="ls400">car</string>

@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import java.text.NumberFormat;
-import android.app.Activity;
-import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -61,11 +59,9 @@ public class MainActivity extends ActionBarActivity {
     private double updateCost() {
         if (mpgAmount > 0) {
             double gallons = distanceAmount/mpgAmount;
-            double cost = gallons*gasAmount;
-            return cost;
+            return gallons*gasAmount;
         } else {
-            double cost = 0;
-            return cost;
+            return 0;
         }
     }
 
@@ -83,7 +79,7 @@ public class MainActivity extends ActionBarActivity {
             new OnSeekBarChangeListener() {
                 @Override
                 public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                    mpgAmount = progress;
+                    mpgAmount = progress+10;
                     updateMpg();
                     updateStandard();
                 }
@@ -103,7 +99,7 @@ public class MainActivity extends ActionBarActivity {
             new OnSeekBarChangeListener() {
                 @Override
                 public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                    gasAmount = progress/100;
+                    gasAmount = (progress+100)/100;
                     updateGas();
                     updateStandard();
                 }
@@ -151,8 +147,8 @@ public class MainActivity extends ActionBarActivity {
             NumberFormat.getIntegerInstance();
 
     private double distanceAmount = 0.0;
-    private double mpgAmount = 30;
-    private double gasAmount = 2.6;
+    private double mpgAmount = 25;
+    private double gasAmount = 2.5;
     private TextView costTextView;
     private TextView mpgView;
     private TextView gasView;

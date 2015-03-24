@@ -73,8 +73,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/mileSeekBar"
             android:layout_weight="4"
-            android:max="50"
-            android:progress="30" />
+            android:max="40"
+            android:progress="15" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -111,8 +111,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/gasSeekBar"
             android:layout_weight="4"
-            android:max="500"
-            android:progress="260" />
+            android:max="300"
+            android:progress="150" />
 
         <TextView
             android:layout_width="wrap_content"
